@@ -1,11 +1,11 @@
 :root{
-  /* Paleta de Cores - Café Especial */
-  --main-color:#1a1b1c;      /* Preto Profundo (Fundo) */
-  --primary-color: #4B2C20;   /* Marrom Profundo (Títulos) */
-  --secondary-color: #D4A373; /* Bege Caramelo (Destaques) */
-  --accent-color: #BC6C25;    /* Laranja Queimado (CTA/Promo) */
-  --bg-body: #000000;         /* Off-white (Fundo) */
-  --text-main: #333333;       /* Cinza Escuro (Leitura) */
+  
+  --main-color:#1a1b1c;      
+  --primary-color: #4B2C20;   
+  --secondary-color: #D4A373; 
+  --accent-color: #BC6C25;   
+  --bg-body: #000000;       
+  --text-main: #333333;       
   --white: #ffffff;
 }
 *{
@@ -58,6 +58,7 @@ body{
 }
 .navegacao a:hover{
     color: var(--accent-color);
+    text-decoration: underline;
 }
 .home-content{
    text-align: center;
