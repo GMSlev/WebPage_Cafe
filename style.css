@@ -147,38 +147,6 @@ section > img{
     padding-left: 20px;
 }
 
-.caracteristicas{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap:30px;
-    padding: 80px 20px;
-    background-color: var(--primary-color);
-}
-.caract-item{
-    background-color: var(--main-color); 
-    padding: 40px;
-    text-align: center;
-    border-radius: 20px;
-    border: 1px solid var(--secondary-color);  
-    transition: border-color 0.3s;
-}
-.caract-item:hover{
-    border-color: var(--accent-color); 
-}
-.caract-item .icone{
-    font-size: 2.5rem;   
-    margin-bottom: 20px; 
-}
-.caract-item h3{
-    color: var(--secondary-color);
-    font-family: 'Montserrat', sans-serif;
-    margin-bottom: 15px;
-}
-.caract-item p{
-    color: var(--white);
-    font-family: 'Raleway', sans-serif;
-    line-height: 1.6;
-}
 footer{
     background-color: var(--primary-color);
     color: var(--white);
