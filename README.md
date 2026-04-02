@@ -32,7 +32,7 @@ Este projeto foi construído utilizando apenas tecnologias web fundamentais (sem
 - **Position Sticky:** Cabeçalho fixo durante scroll
 - **Pseudo-elementos:** Barra deslizante no menu (`:after`)
 
-### JavaScript (Vanilla)
+### JavaScript 
 - Sistema de tema dinâmico (Dark/Light Mode)
 - Detecção de preferência do usuário via `localStorage`
 - Event listeners para interatividade
