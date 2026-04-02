@@ -204,7 +204,7 @@ initTheme()
 
 ---
 
-## 🔍 SEO & Performance
+## 🔍 Performance
 
 - Semântica HTML5 adequada
 - Meta tags para mobile
@@ -213,26 +213,4 @@ initTheme()
 - Zero dependências externas (performance otimizada)
 - Scroll suave nativo (CSS)
 
----
 
-## 📄 Licença
-
-Este projeto é de uso livre. Desenvolvido por **Gabriel Martinez**.
-
----
-
-## 🤝 Contribuições
-
-Sugestões e melhorias são bem-vindas! Abra uma issue ou faça um pull request.
-
----
-
-## 📞 Contato
-
-- **Repositório:** [GitHub - WebPage_Cafe](https://github.com/GMSlev/WebPage_Cafe)
-- **Branch:** Main (produção)
-
----
-
-**Última atualização:** 2 de Abril de 2026  
-**Versão:** 1.1.0
