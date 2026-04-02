@@ -11,7 +11,7 @@ A **Originne** é uma landing page moderna e responsiva desenvolvida para expres
 | **Tipo** | Landing Page - Café Artesanal |
 | **Status** | Em desenvolvimento |
 | **Responsividade** | Mobile-first, Desktop-optimized |
-| **Stack** | HTML5 + CSS3 + Vanilla JavaScript |
+| **Stack** | HTML5 + CSS3 + JavaScript |
 | **Dependências** | Nenhuma (Zero dependencies) |
 
 ---
