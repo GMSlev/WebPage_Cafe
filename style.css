@@ -1,0 +1,292 @@
+:root[data-theme="dark"],
+:root {
+  /* Paleta de Cores - Café Especial (Dark Mode) */
+  --main-color: #1a1b1c;      /* Preto Profundo (Fundo) */
+  --primary-color: #4B2C20;   /* Marrom Profundo (Títulos) */
+  --secondary-color: #D4A373; /* Bege Caramelo (Destaques) */
+  --accent-color: #BC6C25;    /* Laranja Queimado (CTA/Promo) */
+  --bg-body: #000000;         /* Off-white (Fundo) */
+  --text-main: #E8E8E8;       /* Texto claro */
+  --white: #ffffff;
+}
+
+:root[data-theme="light"] {
+  /* Paleta de Cores - Modo Claro (Mantém Identidade) */
+  --main-color: #F5F1ED;      /* Off-white quente (Fundo) */
+  --primary-color: #8B5A3C;   /* Marrom mais claro */
+  --secondary-color: #C68642; /* Bege mais vibrante */
+  --accent-color: #D4814F;    /* Laranja mais visível */
+  --bg-body: #FFFFFF;         /* Branco puro */
+  --text-main: #2C2C2C;       /* Cinza muito escuro */
+  --white: #1a1b1c;           /* Texto títulos */
+}
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: var(--main-color);
+    color: var(--text-main);
+}
+header {
+    width: 100%;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+#home{
+    display: flex;
+    align-items: center; /* Alinha verticalmente no centro */
+    justify-content: center; /* Centraliza o conjunto na tela */
+    flex-wrap: wrap;
+    gap: 40px; /* Espaço entre o card e a imagem */
+    min-height: 80vh; /* Garante que a seção ocupe boa parte da tela */
+    padding: 40px 20px;
+    position: relative;
+}
+
+#home > img{
+    max-width: 100%;
+    width: 400px;
+    height: auto;
+    border-radius: 12%;
+    object-fit: cover;
+    position: relative;
+    z-index: 10;
+    flex-shrink: 0;
+    
+}
+.Cabecalho{
+    background-color: var(--primary-color);
+    color: var(--white);
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+.Cabecalho img{
+    height: 120px;
+    width: auto;
+}
+.navegacao a{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    letter-spacing: 3px;
+    margin: 0 15px;
+    padding: 20px 15px;
+    text-decoration: none;
+    color: var(--white);
+    transition: color 0.3s ease;
+    position: relative;
+    z-index: 1000;
+    display: inline-block;
+}
+
+/* Barra deslizante embaixo do link */
+.navegacao a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 3px;
+    background-color: var(--accent-color);
+    transform: translateX(-50%);
+    transition: width 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.navegacao a:hover::after {
+    width: 100%;
+}
+
+.navegacao a:hover{
+    color: var(--accent-color);
+}
+.home-content{
+   text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    max-width: 450px; /* Melhor usar max-width para responsividade */
+    background-color: var(--primary-color);
+    border-radius: 50px; /* Bordas arredondadas mais suaves */
+    padding: 40px;
+    margin: 0; /* Remova o margin auto para o flexbox trabalhar */
+}
+.home-content h1{
+    font-size: 2.0rem;
+    padding:20px;
+    color: var(--white);
+    font-family:'Montserrat', sans-serif;
+    border-bottom: 2px solid var(--accent-color);
+
+}
+.home-text{
+    color: var(--text-main);
+    font-family:'Raleway', sans-serif;
+}
+.btn-main {
+    display: inline-block; 
+    margin-top: 25px;   
+    padding: 15px 35px;   
+    background-color: var(--secondary-color); 
+    color: var(--primary-color);  
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;      
+    text-transform: uppercase; 
+    letter-spacing: 1px;   
+    border-radius: 50px;   
+    transition: all 0.3s ease; 
+}
+
+.btn-main:hover {
+    background-color: var(--accent-color); 
+    color: var(--white);                   
+    transform: scale(1.05);               
+}
+
+/* Responsividade para telas menores */
+@media (max-width: 768px) {
+    #home {
+        flex-direction: column;
+    }
+    
+    #home > img{
+        width: 280px;
+    }
+}
+
+@media (max-width: 480px) {
+    #home > img{
+        width: 100%;
+        max-width: 280px;
+    }
+}
+   
+#sobre{
+    background-color: var(--main-color);
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    padding: 100px 15%;
+    line-height:1.8;
+    place-content: center;
+    color: var(--text-main);
+    border-top: 2px solid var(--accent-color);
+}
+#sobre h2{
+    font-family:'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: var(--secondary-color);
+    text-align: center;
+}
+#sobre p{
+    font-family:'Raleway', sans-serif;
+    font-size: 1.1rem;
+    color: var(--text-main);
+    margin-bottom: 20px;
+}
+#sobre p span{
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+.frase-efeito{
+    font-style: italic;
+    font-size: 1.3rem;
+    color: var(--accent-color);
+    margin-top: 40px;
+    border-left: 4px solid var(--accent-color);
+    padding-left: 20px;
+}
+
+#produtos{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap:30px;
+    padding: 80px 20px;
+    background-color: var(--primary-color);
+}
+.catag-item{
+    background-color: var(--main-color); 
+    padding: 40px;
+    text-align: center;
+    border-radius: 20px;
+    border: 1px solid var(--secondary-color);  
+    transition: border-color 0.3s;
+}
+.catag-item:hover{
+    border-color: var(--accent-color); 
+}
+.catag-item .icone{
+    font-size: 2.5rem;   
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 10;
+}
+.catag-item .icone img{
+    width: 100%;
+    height: auto;
+    max-width: 650px;
+    position: relative;
+    z-index: 10;
+}
+.catag-item h3{
+    color: var(--secondary-color);
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 15px;
+}
+article > div{
+    color: var(--text-main);
+    font-family: 'Monteserrat', sans-serif;
+}
+.catag-item li{
+    color: var(--text-main);
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.6;
+}
+footer{
+    background-color: var(--primary-color);
+    color: var(--white);
+    text-align: center;
+    padding: 20px 0;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 40px solid var(--accent-color);
+}
+footer img:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+/* Botão Toggle Tema */
+.theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    padding: 10px 15px;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+    color: var(--white);
+}
+
+.theme-toggle:hover {
+    transform: rotate(20deg);
+}
+
+/* Transição suave entre temas */
+body, 
+header, 
+h1, h2, h3,
+p, 
+a,
+section,
+article,
+div {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
