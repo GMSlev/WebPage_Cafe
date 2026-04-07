@@ -8,7 +8,8 @@ function initTheme() {
         console.error('Botão de tema não encontrado');
         return;
     }
-            
+
+
     // Detectar preferência do usuário ou usar a salva
     function initializeTheme() {
         const savedTheme = localStorage.getItem('theme') || 'dark'; // Padrão para 'dark' se não houver preferência salva
