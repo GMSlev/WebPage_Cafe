@@ -221,6 +221,7 @@ footer{
     font-family: 'Montserrat', sans-serif;
     margin-top: 40px solid var(--accent-color);
 }
+<<<<<<< HEAD
 
 #sobre img{
     width: 100%;
@@ -230,3 +231,9 @@ footer{
     object-fit: cover;
     position: relative;   
 }
+=======
+footer img:hover{
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+>>>>>>> refs/remotes/origin/main
