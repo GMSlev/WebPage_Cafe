@@ -250,6 +250,11 @@ article > div{
     font-family: 'Raleway', sans-serif;
     line-height: 1.6;
 }
+
+.catag-item img:hover{
+    transform:scale(1.10);
+}
+
 footer{
     background-color: var(--primary-color);
     color: var(--white);
